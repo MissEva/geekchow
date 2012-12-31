@@ -1,4 +1,12 @@
 RailsPrelaunchSignup::Application.routes.draw do
+  get "pages/menu"
+
+  get "pages/about"
+
+  get "pages/contact"
+
+  get "pages/bio"
+
   authenticated :user do
     root :to => 'home#index'
   end
